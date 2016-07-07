@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+li {
+	list-style: none;
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.container {
+	max-width: 1215px;
+	margin: 0 auto;
+}
+
+main {
+	height: 1028px;
+	background-image: url(../img/fon.jpg);
+	background-color: gray;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.main-header {
+	height: 36px;
+	background-image: url(../img/header-texture.png);
+	background-repeat: repeat;
+	background-color: #074f8f;
+}
+
+.registation {
+	position: relative;
+	float: right;
+}
+
+ul.main-menu {
+	display: block;
+}
+
+ul.main-menu > li {
+	float: right;
+	position: relative;
+}
+
+ul.main-menu > li > a {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 3px;
+	padding: 0 12px;
+	line-height: 36px;
+	color: #60b5ed;
+}
+
+ul.main-menu > li > a:hover {
+	background-color: #4eabda;
+	color: white;
+}
+
+.rectangle {
+	position: absolute;
+	top: 2px;
+	width: 1px;
+	height: 31px;
+	background: #226ba8;
+}
+
+.registation-flag a {
+	display: inline-block;
+	vertical-align: top;
+	height: 36px;
+	line-height: 36px;
+}
+
+.registation-flag {
+	position: relative;
+	float: left;
+	height: 36px;
+	width: 161px;
+	text-align: center;
+	line-height: 36px;
+}
+
+.registation-flag a {
+	display: inline-block;
+	line-height: 36px;
+}
+.registation-flag img {
+	padding-left: 20px;
+	 vertical-align: middle;
+}
+
+.registration-menu-btn {
+	position: relative;
+	float: right;
+	height: 36px;
+	width: 191px;
+	margin: 0px 20px 0 17px;
+	background-image: url(../img/fon-menu-registration.png);
+	background-color: #4ca8d9;
+	background-repeat: no-repeat;
+	text-align: center;
+	line-height: 36px;
+	color: white;
+}
+
+.registration-menu-btn a {
+	text-decoration: underline;
+}
+
+.registration-menu-btn a:hover {
+	text-decoration: none;
+}
+
