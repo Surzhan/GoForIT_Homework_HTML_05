@@ -16,7 +16,7 @@
 				</div>
 				<div class="registration-menu-btn">
 					Ola! <a href="#">Entrar</a> ou 
-					<a href="#">Cadastre-se</a>
+					<a href="#modal-window">Cadastre-se</a>
 				</div>
 			</div>
 			<ul class="main-menu">
@@ -28,19 +28,20 @@
 			</ul>
 		</header>
 		<main>
-			<div class="modal-form">
+			<div id="modal-window" class="modal-form">
 				<div class="title">
 					<h1>Cadastre-se</h1>
 				</div>
 				<div class="form-block">
 					<form>
-						<input class="facebook-registration-btn" type="submit" name="registation-form" value="Log In with Facebook">
-						<input type="text" name="registation-form" value="Fist Name">
-						<input type="text" name="registation-form" value="Last Name">
-						<input type="email" name="registation-form" value="Email Address">
-						<input type="password" name="registation-form" value="Choose Password" placeholder="Choose Password">
-						<input type="password" name="registation-form" value="Password Confirm" placeholder="Password Confirm">
-						<input type="checkbox" id="checkbox-1" name="registation-form" value="checkbox-1"><label for="checkbox-1">Send me Youbike updates and tips</label>
+						<input class="facebook-registration-btn" type="submit" name="log-in-facebook" value="">
+						<input type="text" name="fist-name" value="Fist Name" placeholder="Fist Name">
+						<input type="text" name="last-name" value="Last Name">
+						<input type="email" name="email" value="Email Address">
+						<input type="password" name="password" value="Choose Password" placeholder="Choose Password">
+						<input type="password" name="confirm-password" value="Password Confirm" placeholder="Password Confirm">
+						<span id="checkbox-img"></span><input type="checkbox" id="checkbox-1" name="checkbox-1" value="checkbox-1">
+						<label for="checkbox-1">Send me Youbike updates and tips</label>
 						<input class="create-account-btn" type="submit" name="registation-form" value="Create my Account">
 					</form>
 					<p>By clicking the button above, you agree to the Terms of Service<br>

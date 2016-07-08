@@ -3,7 +3,17 @@
 	padding: 0;
 }
 
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
 body {
+	font-family: "Helvetica Neue Regular", Tahoma;
 	font-size: 14px;
 }
 
@@ -68,6 +78,7 @@ ul.main-menu > li > a {
 ul.main-menu > li > a:hover {
 	background-color: #4eabda;
 	color: white;
+	font-weight: bold;
 }
 
 .rectangle {
@@ -134,6 +145,7 @@ ul.main-menu > li > a:hover {
 	margin: 0 auto;
 	height: 613px;
 	width: 560px;
+	display: block;
 }
 
 .modal-form input {
@@ -153,18 +165,37 @@ input[type=password] {
 	color: #cccccc;
 }
 
+input[type=text]:focus {
+	background-color: #1b5288;
+}
+
+input[type=email]:focus {
+	background-color: #1b5288;
+}
+
+input[type=password]:focus {
+	background-color: #1b5288;
+}
+
+
 .facebook-registration-btn {
 	margin: 0px auto 77px;
 	border: 0;
 	height: 35px;
 	width: 276px;
+	background-image: url(../img/login-facebook-btn.png);
+	background-color: #324a86;
+	background-repeat: no-repeat;
 }
 
 .create-account-btn {
-	margin: 0 auto;
-	height: 36px;
-	width: 150px;
+	margin: 0 auto 25px;
+	height: 37px;
+	width: 151px;
 	color: white;
+	background: linear-gradient(to top, #2e7ac4, #50aedb);
+	border: 1px solid #6bb8e7;
+	border-radius: 2px;
 }
 
 .modal-form p {
@@ -193,11 +224,27 @@ input[type=password] {
 }
 
 .form-block label {
-	display: block;
+	display: inline-block;
+	padding-bottom: 25px;
 	text-align: center;
 	color: #cccccc;
 }
 
 input[type=checkbox] {
+	position: relative;
+	margin-right: 10px;
+	margin-left: 143px;
+	display: inline-block;
+	z-index: 2;
+	opacity: 0.7;
+}
 
+#checkbox-img {
+	display: inline-block;
+	height: 13px;
+	width: 13px;
+	left: 143px;
+	position: absolute;
+	background-image: url(../img/checkbox-icon.png);
+	z-index: 1
 }
