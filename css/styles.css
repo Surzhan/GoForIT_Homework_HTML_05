@@ -45,6 +45,8 @@ main {
 	background-size: contain;
 }
 
+/* HEADER*/
+
 .main-header {
 	height: 36px;
 	background-image: url(../img/header-texture.png);
@@ -136,6 +138,9 @@ ul.main-menu > li > a:hover {
 	text-decoration: none;
 }
 
+/* END HEADER */
+/* MODAL WINDOW */
+
 .modal-form {
 	position: fixed;
 	top: 20vh;
@@ -146,6 +151,28 @@ ul.main-menu > li > a:hover {
 	height: 613px;
 	width: 560px;
 	display: block;
+}
+
+.separator {
+	margin-bottom: 20px;
+	height: 24px;
+	line-height: 24px;
+	color: #999999;
+	text-align: center;
+}
+
+.strip {
+	position: absolute;
+	left: 142px;
+	top: 192px;
+	width: 123px;
+	height: 1px;
+	background: black;
+	box-shadow: 0px -1px 0px 0px rgba(71,71,70,1);
+}
+
+.strip-1 {
+left: 296px
 }
 
 .modal-form input {
@@ -179,7 +206,7 @@ input[type=password]:focus {
 
 
 .facebook-registration-btn {
-	margin: 0px auto 77px;
+	margin: 0px auto 30px;
 	border: 0;
 	height: 35px;
 	width: 276px;
@@ -236,7 +263,6 @@ input[type=checkbox] {
 	margin-left: 143px;
 	display: inline-block;
 	z-index: 2;
-	opacity: 0.7;
 }
 
 #checkbox-img {
@@ -248,3 +274,5 @@ input[type=checkbox] {
 	background-image: url(../img/checkbox-icon.png);
 	z-index: 1
 }
+
+/* END MODAL WINDOW */
