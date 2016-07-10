@@ -33,7 +33,8 @@ li {
 }
 
 .container {
-	max-width: 1215px;
+/*	max-width: 1215px;*/
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -42,7 +43,8 @@ main {
 	background-image: url(../img/fon.jpg);
 	background-color: gray;
 	background-repeat: no-repeat;
-	background-size: contain;
+/*	background-size: contain;*/
+	background-size: cover;
 }
 
 /* HEADER*/
