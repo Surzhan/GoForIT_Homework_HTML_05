@@ -33,7 +33,6 @@ li {
 }
 
 .container {
-/*	max-width: 1215px;*/
 	width: 100%;
 	margin: 0 auto;
 }
@@ -43,7 +42,6 @@ main {
 	background-image: url(../img/fon.jpg);
 	background-color: gray;
 	background-repeat: no-repeat;
-/*	background-size: contain;*/
 	background-size: cover;
 }
 
@@ -85,6 +83,10 @@ ul.main-menu > li > a:hover {
 	font-weight: bold;
 }
 
+ul.main-menu > li > a:active {
+	text-decoration: underline;
+}
+
 .rectangle {
 	position: absolute;
 	top: 2px;
@@ -114,7 +116,7 @@ ul.main-menu > li > a:hover {
 	line-height: 36px;
 }
 .registation-flag img {
-	padding-left: 20px;
+/*	padding-left: 20px;*/
 	 vertical-align: middle;
 }
 
@@ -130,6 +132,21 @@ ul.main-menu > li > a:hover {
 	text-align: center;
 	line-height: 36px;
 	color: white;
+}
+
+.registation-flag a {
+	margin-left: 10px;
+	padding: 0 10px;
+}
+
+.registation-flag a:hover{
+	background-color: #4eabda;
+	color: white;
+	font-weight: bold;
+}
+
+.registation-flag a:active {
+	text-decoration: underline;
 }
 
 .registration-menu-btn a {
@@ -208,6 +225,7 @@ input[type=password]:focus {
 
 
 .facebook-registration-btn {
+	display: block;
 	margin: 0px auto 30px;
 	border: 0;
 	height: 35px;
@@ -215,6 +233,14 @@ input[type=password]:focus {
 	background-image: url(../img/login-facebook-btn.png);
 	background-color: #324a86;
 	background-repeat: no-repeat;
+}
+
+.facebook-registration-btn:hover {
+	box-shadow: 0px 0px 10px 6px rgba(55,77,137,1);
+}
+
+.facebook-registration-btn:active {
+	box-shadow: 0px 0px 2px 6px rgba(55,77,137,1);
 }
 
 .create-account-btn {
@@ -225,6 +251,14 @@ input[type=password]:focus {
 	background: linear-gradient(to top, #2e7ac4, #50aedb);
 	border: 1px solid #6bb8e7;
 	border-radius: 2px;
+}
+
+input[type=submit]:hover {
+	box-shadow: 0px 0px 10px 6px rgba(27,82,136,1);
+}
+
+input[type=submit]:active {
+	box-shadow: 0px 0px 2px 6px rgba(27,82,136,1);
 }
 
 .modal-form p {
